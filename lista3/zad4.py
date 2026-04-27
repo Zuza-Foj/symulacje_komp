@@ -30,9 +30,11 @@ def opis(samples):
     print(f"wartość minimalna: {min(samples):.4f}")
     print(f"wartość maksymalna: {max(samples):.4f}")
 
-print("Standardowy rozkład normalny N(0, 1) - n=10 000")
-s1 = generator_bm(mi=0, sig=1, n=10_000)
-print(opis(s1))
-print("Mój normalany N(5, 2²) - n=10 000")
-s2 = generator_bm(mi=5, sig=2, n=10_000)
-print(opis(s2))
+
+if __name__ == "__main__":
+    print("Standardowy rozkład normalny N(0, 1) - n=10 000")
+    s1 = generator_bm(mi=0, sig=1, n=10_000)
+    print(opis(s1))
+    print("Mój normalany N(5, 2²) - n=10 000")
+    s2 = generator_bm(mi=5, sig=2, n=10_000)
+    print(opis(s2))

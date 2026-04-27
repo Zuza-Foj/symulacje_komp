@@ -3,16 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import gamma
 
-# def d_akcept_odrzu(n):
-#     p = {1: 0.11, 2: 0.12, 3: 0.27, 4: 0.19, 5: 0.31}
-#     vals = np.array(list(p.keys()))
-#     probs = np.array(list(p.values()))
-#     g_prob = 1 / 5
-#     M = np.max(probs) / g_prob
-#     samples = []
-#     while len(samples) < n:
-#         pass
-
 n = 100000
 
 # (a)
