@@ -24,15 +24,15 @@ def opis(samples):
     mean = sum(samples) / n
     var = sum((x - mean) ** 2 for x in samples) / n
     std = math.sqrt(var)
-    print(f"  Count : {n}")
-    print(f"  Mean  : {mean:.4f}")
-    print(f"  Std   : {std:.4f}")
-    print(f"  Min   : {min(samples):.4f}")
-    print(f"  Max   : {max(samples):.4f}")
+    print(f"liczba prób: {n}")
+    print(f"średnia: {mean:.4f}")
+    print(f"odchylenie standardowe: {std:.4f}")
+    print(f"wartość minimalna: {min(samples):.4f}")
+    print(f"wartość maksymalna: {max(samples):.4f}")
 
-print("Standard normal  N(0, 1) — 10 000 samples")
+print("Standardowy rozkład normalny N(0, 1) - n=10 000")
 s1 = generator_bm(mi=0, sig=1, n=10_000)
 print(opis(s1))
-print("Custom normal  N(5, 2²) — 10 000 samples")
+print("Mój normalany N(5, 2²) - n=10 000")
 s2 = generator_bm(mi=5, sig=2, n=10_000)
 print(opis(s2))
