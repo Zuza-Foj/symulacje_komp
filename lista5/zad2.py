@@ -78,4 +78,3 @@ for idx, fn_info in enumerate(functions):
 
 plt.tight_layout()
 plt.show()
-#plt.savefig("zadanie2_thinning_verification.png")
